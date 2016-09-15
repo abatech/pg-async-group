@@ -1,6 +1,6 @@
 {
   "name": "pg-async-transaction",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Asynchronously run node-postgres queries in a postgres transaction, rolling back on error",
   "main": "index.js",
   "scripts": {
