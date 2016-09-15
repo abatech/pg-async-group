@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/dcousens/pg-async-transaction/issues"
   },
-  "homepage": "https://github.com/dcousens/pg-async-transaction#readme"
+  "homepage": "https://github.com/dcousens/pg-async-transaction#readme",
+  "dependencies": {
+    "async": "^2.0.1"
+  }
 }
