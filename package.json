@@ -1,7 +1,7 @@
 {
   "name": "pg-async-transaction",
   "version": "1.0.4",
-  "description": "Asynchronously run node-postgres queries in a postgres transaction, rolling back on error",
+  "description": "Asynchronously run a postgres transaction, rolling back on error",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,8 +22,5 @@
   "bugs": {
     "url": "https://github.com/dcousens/pg-async-transaction/issues"
   },
-  "homepage": "https://github.com/dcousens/pg-async-transaction#readme",
-  "dependencies": {
-    "async": "^2.0.1"
-  }
+  "homepage": "https://github.com/dcousens/pg-async-transaction#readme"
 }
