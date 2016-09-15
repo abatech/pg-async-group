@@ -1,0 +1,26 @@
+{
+  "name": "pg-async-transaction",
+  "version": "1.0.0",
+  "description": "Asynchronously run node-postgres queries in a postgres transaction, rolling back on error",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcousens/pg-async-transaction.git"
+  },
+  "keywords": [
+    "async",
+    "parallel",
+    "queries",
+    "postgres",
+    "transaction"
+  ],
+  "author": "Daniel Cousens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcousens/pg-async-transaction/issues"
+  },
+  "homepage": "https://github.com/dcousens/pg-async-transaction#readme"
+}
