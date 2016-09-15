@@ -8,16 +8,18 @@ let pg = require('pg')
 let pat = require('pg-async-transaction')
 
 pg.connect(process.env.POSTGRES, (err, client, free) => {
-	if (err) return callback(err)
+	if (err) return done(err)
 
-	pat([
-		(callback) => client.query('INSERT ...', callback),
-		(callback) => client.query('INSERT ...', callback),
-		(callback) => client.query('INSERT ...', callback)
-	], queries, (err) => {
-		free()
+	pat(client, (callback) => {
+		async.parallel([
+			(callback) => client.query('INSERT ...', callback),
+			(callback) => client.query('INSERT ...', callback),
+			(callback) => client.query('INSERT ...', callback)
+		], callback)
+	}, (err) => {
+		if (err) free()
 
-		callback(err)
+		done(err)
 	})
 })
 ```
