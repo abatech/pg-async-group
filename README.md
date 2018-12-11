@@ -14,9 +14,9 @@ function foo (done) {
 
 		pat(client, (callback) => {
 			parallel([
-				(callback) => client.query('INSERT ...', callback),
-				(callback) => client.query('INSERT ...', callback),
-				(callback) => client.query('INSERT ...', callback)
+				(next) => client.query('INSERT ...', next),
+				(next) => client.query('INSERT ...', next),
+				(next) => client.query('INSERT ...', next)
 			], callback)
 		}, (err, results) => {
 			if (err) free()
@@ -33,4 +33,4 @@ function foo (done) {
 // ...
 ```
 
-## LICENSE [ISC](LICENSE)
+## LICENSE [MIT](LICENSE)
